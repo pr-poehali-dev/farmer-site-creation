@@ -1,13 +1,13 @@
-import Hero from "@/components/Hero";
-import AboutFarm from "@/components/AboutFarm";
-import Products from "@/components/Products";
+import FarmHero from "@/components/FarmHero";
+import FarmAbout from "@/components/FarmAbout";
+import FarmProducts from "@/components/FarmProducts";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-merriweather">
-      <Hero />
-      <AboutFarm />
-      <Products />
+    <div className="min-h-screen">
+      <FarmHero />
+      <FarmAbout />
+      <FarmProducts />
     </div>
   );
 };

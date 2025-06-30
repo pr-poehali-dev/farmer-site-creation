@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -89,6 +89,16 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --farm-green: 142 45% 22%;
+    --farm-light-green: 142 29% 39%;
+    --farm-sage: 142 28% 60%;
+    --farm-cream: 42 50% 96%;
+    --farm-wheat: 42 42% 85%;
+    --farm-brown: 27 45% 16%;
+    --farm-earth: 27 66% 31%;
+    --farm-sky: 193 54% 72%;
+    --farm-orange: 24 100% 63%;
   }
 }
 
@@ -99,5 +109,34 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
   }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+.bg-farm-green { background-color: hsl(var(--farm-green)); }
+.bg-farm-light-green { background-color: hsl(var(--farm-light-green)); }
+.bg-farm-sage { background-color: hsl(var(--farm-sage)); }
+.bg-farm-cream { background-color: hsl(var(--farm-cream)); }
+.bg-farm-wheat { background-color: hsl(var(--farm-wheat)); }
+.bg-farm-brown { background-color: hsl(var(--farm-brown)); }
+.bg-farm-earth { background-color: hsl(var(--farm-earth)); }
+.bg-farm-sky { background-color: hsl(var(--farm-sky)); }
+.bg-farm-orange { background-color: hsl(var(--farm-orange)); }
+
+.text-farm-green { color: hsl(var(--farm-green)); }
+.text-farm-light-green { color: hsl(var(--farm-light-green)); }
+.text-farm-sage { color: hsl(var(--farm-sage)); }
+.text-farm-cream { color: hsl(var(--farm-cream)); }
+.text-farm-wheat { color: hsl(var(--farm-wheat)); }
+.text-farm-brown { color: hsl(var(--farm-brown)); }
+.text-farm-earth { color: hsl(var(--farm-earth)); }
+.text-farm-sky { color: hsl(var(--farm-sky)); }
+.text-farm-orange { color: hsl(var(--farm-orange)); }
+
+.border-farm-green { border-color: hsl(var(--farm-green)); }
+.border-farm-sage { border-color: hsl(var(--farm-sage)); }
 }
